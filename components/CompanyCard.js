@@ -74,7 +74,7 @@ const CompanyCard = () => {
             </View>
             <Text className='my-3 text-md'>{item.description}</Text>
 
-            <View className='flex flex-row items-center justify-between my-2'>
+            <View className='flex flex-row border-b-[1px] pb-3 border-gray-500 items-center justify-between my-2'>
                 <View>
                     <Text className='text-gray-500 my-2'>To Raised</Text>
                     <Text className='text-md font-bold'>{item.to_Raised}</Text>
@@ -85,8 +85,22 @@ const CompanyCard = () => {
                         {item.launch_date}
                     </Text>
                 </View>
-                <View className=' '>
+                <View className=' rounded-full border-4 px-5 py-6 item-center border-[#e90075]'>
                     <Text>{item.percenteage_completed}</Text>
+                </View>
+            </View>
+            <View className='flex flex-row justify-between items-center my-2'>
+                <View>
+                    <Text className='text-md font-bold'>{item.raised}</Text>
+                    <Text className='text-gray-500 my-2'>Raised</Text>
+                </View>
+                <View>
+                    <Text className='text-md font-bold'>{item.equity}</Text>
+                    <Text className='text-gray-500 my-2'>Equity</Text>
+                </View>
+                <View>
+                    <Text className='text-md font-bold'>{item.investors}</Text>
+                    <Text className='text-gray-500 my-2'>Investors</Text>
                 </View>
             </View>
         </View>

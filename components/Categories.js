@@ -49,10 +49,12 @@ const Categories = () => {
                 paddingVertical: 10,
             }}
         >
-            {CategoryList.map((category) => (
-                <Text className='border bg-white text-gray-500 rounded-3xl text-lg  mr-3 px-5 py-1 border-gray-400'>
-                    {category.name}
-                </Text>
+            {CategoryList.map((category, index) => (
+                <View key={index}>
+                    <Text className='border bg-white text-gray-500 rounded-3xl text-lg  mr-3 px-5 py-1 border-gray-400'>
+                        {category.name}
+                    </Text>
+                </View>
             ))}
         </ScrollView>
     )
