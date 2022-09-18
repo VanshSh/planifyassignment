@@ -45,14 +45,14 @@ const Categories = () => {
         <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ paddingVertical: 20 }}
+            contentContainerStyle={{
+                paddingVertical: 10,
+            }}
         >
             {CategoryList.map((category) => (
-                <Pressable>
-                    <Text className='border bg-white text-gray-500 rounded-3xl text-lg px-5 py-1 mr-3 border-gray-400'>
-                        {category.name}
-                    </Text>
-                </Pressable>
+                <Text className='border bg-white text-gray-500 rounded-3xl text-lg  mr-3 px-5 py-1 border-gray-400'>
+                    {category.name}
+                </Text>
             ))}
         </ScrollView>
     )

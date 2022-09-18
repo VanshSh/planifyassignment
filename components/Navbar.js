@@ -10,7 +10,7 @@ import {
 
 const Navbar = () => {
     return (
-        <View className=' py-5 drop-shadow-lg px-3 flex flex-1 flex-row justify-between items-center'>
+        <View className=' py-5 drop-shadow-lg bg-white px-3 flex flex-1 flex-row justify-between items-center'>
             <View className='flex flex-row'>
                 <Bars4Icon color={'gray'} size={25} />
                 <View className=' flex flex-row items-center justify-center   ml-3'>
